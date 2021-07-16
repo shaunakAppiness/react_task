@@ -1,23 +1,28 @@
 import logo from './logo.svg';
+import ToggleSwitch from './components/toggleSwitch/toggleSwitch'
+import Button from './components/button/button'
 import './App.css';
+import { useState } from 'react';
+import ModalButton from './components/modal/modalButton';
 
 function App() {
+  const [status, setStatus] = useState(false);
+
+  const handleClick = () => {
+    console.log('clicked');
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ModalButton />
+      <div style={{ paddingBottom: '15px' }}>
+        <ToggleSwitch label="Shaunak" />
+      </div>
+      <Button
+        bodyText={'button'}
+        buttonStyle={'btn--success'}
+        onClick={handleClick}
+      />
     </div>
   );
 }

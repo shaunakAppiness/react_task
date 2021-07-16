@@ -1,0 +1,35 @@
+/* .app-button  {
+    padding: 10px 30px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.app-button:hover {
+    background: brown;
+} */
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    background-color:#4628ff;
+    color: white;
+    font-weight: bold;
+    transition: all 0.4s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn--primary{
+    background-color:#4628ff;
+}
+.btn--warning{
+    background-color:#ffd028;
+}
+.btn--success{
+    background-color:#14be25;
+}
+.btn--danger{
+    background-color:#eb3f27
+}
